@@ -1,15 +1,9 @@
-const produto = { id : 1, nome : 'Grampo', preco : 34.7 }  //EXEMPLO DE TRATATIVA DE EXCESSÃO - ERRO
- 
- const produtoNovo = new Object(produto) 
- 
- 
- try {
-    
-    console.log("LINHA 15 -> " + produtoNovo.preco) // 34.7
-    onsole.log("GLINHA 16 -> " + produtoNovo.peco) // 34.7
-    
-  }
-  catch(e) {
-    console.log("FALHA DETECTADA ") // 
-  }
+const objeto_aqui = { nome: 'testeNome', sobrenome: 'testeSobrenome' }; 
 
+ 
+ console.log("O que está em nome é = " + objeto_aqui.nome + "\n") // 
+ console.log("O que está em sobrenome é = " + objeto_aqui.sobrenome + "\n") // uma vez criado basta extrair o conteudo 
+
+ Object.keys(objeto_aqui).forEach(key => { // cria indice chamado key para os iens do objeto
+    console.log(key, objeto_aqui[key]);    // exibe a lista de conteúdo do objeto em sequencia
+  });
